@@ -1,0 +1,46 @@
+.PilotosClasificacion{
+    display: flex;
+    justify-content: space-evenly;
+    border-collapse: collapse;
+    justify-items: center;
+}
+
+.PilotosClasificacion tr th{
+    padding: 5px;
+    padding-top: 30px;
+    font-size: map-get($tam-fuente, tam1);
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: solid $colorSecundario;
+    justify-items: center;
+}
+
+.PilotosClasificacion tr td{
+    font-size: map-get($tam-fuente, tam2);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 0.5px solid $colorSecundario;
+    padding: 30px;
+}
+
+.EscuderiasClasificacion{
+    display: flex;
+    justify-content: space-evenly;
+    border-collapse: collapse;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.EscuderiasClasificacion tr th{
+    font-size: map-get($tam-fuente, tam1);
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: solid $colorSecundario;
+    justify-items: center;
+}
+
+.EscuderiasClasificacion tr td{
+    font-size: map-get($tam-fuente, tam2);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 0.5px solid $colorSecundario;
+    padding: 15px;
+}

@@ -1,0 +1,29 @@
+.paginaPrincipal{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.imagenes img{
+    width: 700px;
+    height: 350px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.noticias{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border-left: 3px solid $colorPrincipal;
+    object-fit: contain;
+}
+
+.noticias img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    padding: 5px;
+}

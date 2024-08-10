@@ -1,0 +1,91 @@
+.parrafos{
+    padding: 13px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(10,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: space-between;
+    justify-items: center;
+    /*align-content: center;
+    align-items: center;*/
+}
+
+.ImagenR1{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.ImagenR2{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.ImagenR3{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 10;
+}
+
+.TituloReg{
+    font-style: italic;
+    font-size: map-get($tam-fuente, tam1);
+    border-bottom: 1px solid $colorPrincipal;
+    border-right: 1px solid $colorPrincipal;
+    border-radius: 15px 0px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.texto1{
+    width: 100%;
+    height: 100%;
+    font-style: italic;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    object-fit: contain;
+    border-bottom: 2px solid $colorSecundario;
+    border-left: 2px solid $colorSecundario;
+    border-radius: 0px 15px;
+}
+
+.texto1 p{
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.texto2{
+    width: 100%;
+    height: 100%;
+    font-style: italic;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    object-fit: contain;
+    border-bottom: 2px solid $colorSecundario;
+    border-right: 2px solid $colorSecundario;
+    border-radius: 15px 0px;
+}
+
+.texto2 p{
+    font-size: map-get($tam-fuente, tam4);
+}

@@ -1,0 +1,177 @@
+.circuitos{
+    height: 150px;
+    width: 235px;
+}
+
+.calendario_2024{
+    display: grid;
+    grid-template-columns: repeat(3,452px);
+    grid-template-rows: repeat(8,365px);
+    justify-items: center;
+    object-fit: contain;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-bottom: 40px;
+}
+
+.linea_vertical1{
+    grid-column: 1/2;
+    grid-row: 1/9;
+    height: 100%;
+    width: 3px;
+    justify-self: right;
+    background-color: $colorPrincipal;
+}
+
+.linea_vertical2{
+    grid-column: 2/3;
+    grid-row: 1/9;
+    height: 100%;
+    width: 3px;
+    justify-self: right;
+    background-color: $colorPrincipal;
+}
+
+.bahrain{
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.arabia{
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.australia{
+    object-fit: contain;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.japon{
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.china{
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.miami{
+    object-fit: contain;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.imola{
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.monaco{
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.canada{
+    object-fit: contain;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.españa{
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.austria{
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.granBretaña{
+    object-fit: contain;
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.hungria{
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.belgica{
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.holanda{
+    object-fit: contain;
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.italia{
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.baku{
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.singapur{
+    object-fit: contain;
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+.eeuu{
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+
+.mexico{
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+.brasil{
+    object-fit: contain;
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+
+.lasVegas{
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+
+.qatar{
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 8/9;
+}
+
+.abuDhabi{
+    object-fit: contain;
+    grid-column: 3/4;
+    grid-row: 8/9;
+}

@@ -1,0 +1,22 @@
+/*Primero se llama a las utilities*/
+@import "./utilities/variables";
+@import "./utilities/mapas";
+
+/*2do se llama a base*/
+@import "./base/reset";
+
+/*3ro se llama al layout*/
+@import "./layout/header";
+@import "./layout/main_index";
+@import "./layout/footer";
+@import "./layout/main_equipos";
+@import "./layout/main_calendario";
+@import "./layout/main_clasificacion";
+@import "./layout/main_reglamento";
+
+/*4to se llama a componentes*/
+@import "./components/menus";
+
+/*por ultimo se llama a los media*/
+@import "./layout/media/media768px";
+@import "./layout/media/media390px";

@@ -1,0 +1,292 @@
+@media(max-width:390px){
+    .logoDelSitio{
+        background-color: $colorSecundario;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+    }
+    
+    .logoDelSitio a img{
+        width: 77px;
+        height: 20px;
+    }
+    
+    .menu{
+        list-style: none;
+        background-color: $colorPrincipal;
+        width: 100%;
+        height: 35px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu li a{
+        justify-content: space-evenly;
+        font-size: map-get($tam-fuente, tam6);
+        text-decoration: none;
+        color: white;
+    }
+
+    .paginaPrincipal{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .imagenes img{
+        width: 350px;
+        height: 200px;
+        border-radius: 0px 30px 30px 0px;
+    }
+    
+    .noticias{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        border-left: 1px solid $colorPrincipal;
+        object-fit: contain;
+    }
+    
+    .noticias img{
+        width: 200px;
+        height: 200px;
+        border-radius: 30px;
+    }
+
+    .pie1{
+        display: flex;
+        background-color:rgb(44, 44, 44);
+        width: 100%;
+        height: 33px;
+        align-items: center;
+    }
+    .pie1 img{
+        width: 25px;
+        height: 25px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .f1Play img{
+        height: 30px;
+        width: 70px;
+    }
+    
+    .f1Play2 img{
+        height: 30px;
+        width: 70px;
+    }
+
+    .PilotosClasificacion tr th{
+        padding: 5px;
+        padding-top: 15px;
+        font-size: map-get($tam-fuente, tam6);
+        font-style: italic;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-bottom: solid $colorSecundario;
+        justify-items: center;
+    }
+    
+    .PilotosClasificacion tr td{
+        font-size: map-get($tam-fuente, tam6);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-bottom: 0.5px solid $colorSecundario;
+        padding: 10px;
+    }
+
+    .EscuderiasClasificacion tr th{
+        font-size: map-get($tam-fuente, tam6);
+        font-style: italic;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-bottom: solid $colorSecundario;
+        justify-items: center;
+    }
+    
+    .EscuderiasClasificacion tr td{
+        font-size: map-get($tam-fuente, tam6);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-bottom: 0.5px solid $colorSecundario;
+        padding: 10px;
+    }
+
+    .circuitos{
+        height: 40px;
+        width: 55px;
+    }
+    
+    .calendario_2024{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(12,1fr);
+        justify-items: center;
+        object-fit: contain;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding-bottom: 40px;
+    }
+    
+    .linea_vertical1{
+        grid-column: 1/2;
+        grid-row: 1/13;
+        height: 100%;
+        width: 3px;
+        justify-self: right;
+        background-color: $colorPrincipal;
+    }
+    
+    .linea_vertical2{
+        grid-column: 1/2;
+        grid-row: 1/13;
+        height: 100%;
+        width: 3px;
+        justify-self: right;
+        background-color: $colorPrincipal;
+    }
+
+    .bahrain{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .arabia{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .australia{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .japon{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .china{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .miami{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .imola{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .monaco{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    
+    .canada{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .españa{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    
+    .austria{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    
+    .granBretaña{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    
+    .hungria{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    
+    .belgica{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+    
+    .holanda{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    
+    .italia{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 8/9;
+    }
+    
+    .baku{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+    
+    .singapur{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 9/10;
+    }
+    
+    .eeuu{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+    
+    .mexico{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 10/11
+    }
+    
+    .brasil{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+    
+    .lasVegas{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 11/12;
+    }
+    
+    .qatar{
+        object-fit: contain;
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+    
+    .abuDhabi{
+        object-fit: contain;
+        grid-column: 2/3;
+        grid-row: 12/13;
+    }
+}

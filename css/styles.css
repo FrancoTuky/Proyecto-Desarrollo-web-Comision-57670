@@ -1,30 +1,525 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+/*Primero se llama a las utilities*/
+/*2do se llama a base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-.header{
-    position: sticky;
-}
+/*3ro se llama al layout*/
+.header {
+  position: sticky; }
 
-.logoDelSitio{
-    display: flex;
+.logoDelSitio {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  padding: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center; }
+  .logoDelSitio a img {
+    width: 400px;
+    height: 100px; }
+
+.paginaPrincipal {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px; }
+
+.imagenes img {
+  width: 700px;
+  height: 350px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  border-radius: 0px 30px 30px 0px; }
+
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-left: 3px solid red;
+  object-fit: contain; }
+
+.noticias img {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  padding: 5px; }
+
+.pie1 {
+  display: flex;
+  background-color: #2c2c2c;
+  width: 100%;
+  height: 80px;
+  align-items: center; }
+  .pie1 img {
+    width: 60px;
+    height: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 15px; }
+
+.f1Play img {
+  height: 60px;
+  width: 150px; }
+
+.f1Play2 img {
+  height: 60px;
+  width: 150px; }
+
+.equipos h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 20px; }
+
+.pilotos {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 15px 0px;
+  width: 150px;
+  height: 180px; }
+
+.ferrari {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.redBull {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.mclaren {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.mercedes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.astonMartin {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.vcrb {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.alpine {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.haas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.williams {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.sauber {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  object-fit: contain;
+  justify-items: center;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  border-radius: 0px 30px; }
+
+.pilotos1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center; }
+
+.pilotos2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center; }
+
+.LogoE {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center; }
+
+.AutosE {
+  grid-column: 3/5;
+  grid-row: 2/3;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center; }
+
+.NombreE {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center; }
+
+.circuitos {
+  height: 150px;
+  width: 235px; }
+
+.calendario_2024 {
+  display: grid;
+  grid-template-columns: repeat(3, 452px);
+  grid-template-rows: repeat(8, 365px);
+  justify-items: center;
+  object-fit: contain;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding-bottom: 40px; }
+
+.linea_vertical1 {
+  grid-column: 1/2;
+  grid-row: 1/9;
+  height: 100%;
+  width: 3px;
+  justify-self: right;
+  background-color: red; }
+
+.linea_vertical2 {
+  grid-column: 2/3;
+  grid-row: 1/9;
+  height: 100%;
+  width: 3px;
+  justify-self: right;
+  background-color: red; }
+
+.bahrain {
+  object-fit: contain;
+  grid-column: 1/2;
+  grid-row: 1/2; }
+
+.arabia {
+  object-fit: contain;
+  grid-column: 2/3;
+  grid-row: 1/2; }
+
+.australia {
+  object-fit: contain;
+  grid-column: 3/4;
+  grid-row: 1/2; }
+
+.japon {
+  object-fit: contain;
+  grid-column: 1/2;
+  grid-row: 2/3; }
+
+.china {
+  object-fit: contain;
+  grid-column: 2/3;
+  grid-row: 2/3; }
+
+.miami {
+  object-fit: contain;
+  grid-column: 3/4;
+  grid-row: 2/3; }
+
+.imola {
+  object-fit: contain;
+  grid-column: 1/2;
+  grid-row: 3/4; }
+
+.monaco {
+  object-fit: contain;
+  grid-column: 2/3;
+  grid-row: 3/4; }
+
+.canada {
+  object-fit: contain;
+  grid-column: 3/4;
+  grid-row: 3/4; }
+
+.españa {
+  object-fit: contain;
+  grid-column: 1/2;
+  grid-row: 4/5; }
+
+.austria {
+  object-fit: contain;
+  grid-column: 2/3;
+  grid-row: 4/5; }
+
+.granBretaña {
+  object-fit: contain;
+  grid-column: 3/4;
+  grid-row: 4/5; }
+
+.hungria {
+  object-fit: contain;
+  grid-column: 1/2;
+  grid-row: 5/6; }
+
+.belgica {
+  object-fit: contain;
+  grid-column: 2/3;
+  grid-row: 5/6; }
+
+.holanda {
+  object-fit: contain;
+  grid-column: 3/4;
+  grid-row: 5/6; }
+
+.italia {
+  object-fit: contain;
+  grid-column: 1/2;
+  grid-row: 6/7; }
+
+.baku {
+  object-fit: contain;
+  grid-column: 2/3;
+  grid-row: 6/7; }
+
+.singapur {
+  object-fit: contain;
+  grid-column: 3/4;
+  grid-row: 6/7; }
+
+.eeuu {
+  object-fit: contain;
+  grid-column: 1/2;
+  grid-row: 7/8; }
+
+.mexico {
+  object-fit: contain;
+  grid-column: 2/3;
+  grid-row: 7/8; }
+
+.brasil {
+  object-fit: contain;
+  grid-column: 3/4;
+  grid-row: 7/8; }
+
+.lasVegas {
+  object-fit: contain;
+  grid-column: 1/2;
+  grid-row: 8/9; }
+
+.qatar {
+  object-fit: contain;
+  grid-column: 2/3;
+  grid-row: 8/9; }
+
+.abuDhabi {
+  object-fit: contain;
+  grid-column: 3/4;
+  grid-row: 8/9; }
+
+.PilotosClasificacion {
+  display: flex;
+  justify-content: space-evenly;
+  border-collapse: collapse;
+  justify-items: center; }
+
+.PilotosClasificacion tr th {
+  padding: 5px;
+  padding-top: 30px;
+  font-size: 36px;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: solid black;
+  justify-items: center; }
+
+.PilotosClasificacion tr td {
+  font-size: 32px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: 0.5px solid black;
+  padding: 30px; }
+
+.EscuderiasClasificacion {
+  display: flex;
+  justify-content: space-evenly;
+  border-collapse: collapse;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+
+.EscuderiasClasificacion tr th {
+  font-size: 36px;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: solid black;
+  justify-items: center; }
+
+.EscuderiasClasificacion tr td {
+  font-size: 32px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: 0.5px solid black;
+  padding: 15px; }
+
+.parrafos {
+  padding: 13px;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  justify-content: space-between;
+  justify-items: center;
+  /*align-content: center;
+    align-items: center;*/ }
+
+.ImagenR1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 5; }
+
+.ImagenR2 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 7; }
+
+.ImagenR3 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 10; }
+
+.TituloReg {
+  font-style: italic;
+  font-size: 36px;
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+  border-radius: 15px 0px;
+  grid-column-start: 1;
+  grid-column-end: 5; }
+
+.texto1 {
+  width: 100%;
+  height: 100%;
+  font-style: italic;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  object-fit: contain;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-radius: 0px 15px; }
+
+.texto1 p {
+  font-size: 15px;
+  padding-left: 5px; }
+
+.texto2 {
+  width: 100%;
+  height: 100%;
+  font-style: italic;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  object-fit: contain;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 15px 0px; }
+
+.texto2 p {
+  font-size: 18px; }
+
+/*4to se llama a componentes*/
+.menu {
+  background-color: red;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  .menu li {
+    list-style: none; }
+    .menu li a {
+      font-size: 25px;
+      text-decoration: none;
+      color: white; }
+
+/*por ultimo se llama a los media*/
+@media (max-width: 768px) {
+  .logoDelSitio {
     background-color: black;
     width: 100%;
-    height: 200px;
-    padding: 30px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-}
-
-.logoDelSitio a img{
-    width: 400px;
     height: 100px;
-}
-
-.menu{
+    padding: 30px;
+    flex-wrap: wrap; }
+  .logoDelSitio a img {
+    width: 200px;
+    height: 50px; }
+  .menu {
     list-style: none;
     background-color: red;
     width: 100%;
@@ -33,715 +528,381 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-}
-
-.menu li a{
-    font-size: 25px;
+    align-items: center; }
+  .menu li a {
+    font-size: 15px;
     text-decoration: none;
-    color: white;
-}
-
-.paginaPrincipal{
+    color: white; }
+  .paginaPrincipal {
     display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .pie1 {
+    display: flex;
+    background-color: #2c2c2c;
+    width: 100%;
+    height: 50px;
+    align-items: center; }
+  .pie1 img {
+    width: 30px;
+    height: 30px;
     flex-direction: row;
-}
-
-.imagenes img{
-    width: 700px;
-    height: 350px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right: 25px;
-    border-radius: 0px 30px 30px 0px;
-}
-
-.noticias{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    border-left: 3px solid red;
-    object-fit: contain;
-}
-
-.noticias img{
-    width: 300px;
-    height: 300px;
-    border-radius: 30px;
+    flex-wrap: wrap; }
+  .f1Play img {
+    height: 50px;
+    width: 100px; }
+  .f1Play2 img {
+    height: 50px;
+    width: 100px; }
+  .PilotosClasificacion tr th {
     padding: 5px;
-}
-
-.pie1{
-    display: flex;
-    background-color:rgb(44, 44, 44);
-    width: 100%;
-    height: 80px;
-    align-items: center;
-}
-.pie1 img{
-    width: 60px;
-    height: 60px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-/*Pagina principal/index*/
-
-.parrafos{
-    padding: 13px;
-    width: 100%;
-    height: 100vh;
+    padding-top: 15px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: solid black;
+    justify-items: center; }
+  .PilotosClasificacion tr td {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 0.5px solid black;
+    padding: 15px; }
+  .EscuderiasClasificacion tr th {
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: solid black;
+    justify-items: center; }
+  .EscuderiasClasificacion tr td {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 0.5px solid black;
+    padding: 15px; }
+  .circuitos {
+    height: 90px;
+    width: 120px; }
+  .calendario_2024 {
     display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    justify-items: center;
+    object-fit: contain;
     row-gap: 10px;
     column-gap: 10px;
-    justify-content: space-between;
-    justify-items: center;
-    /*align-content: center;
-    align-items: center;*/
-}
-
-.ImagenR1{
-    width: 100%;
+    padding-bottom: 40px; }
+  .linea_vertical1 {
+    grid-column: 1/2;
+    grid-row: 1/13;
     height: 100%;
-    object-fit: contain;
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-
-.ImagenR2{
-    width: 100%;
+    width: 3px;
+    justify-self: right;
+    background-color: red; }
+  .linea_vertical2 {
+    grid-column: 1/2;
+    grid-row: 1/13;
     height: 100%;
+    width: 3px;
+    justify-self: right;
+    background-color: red; }
+  .bahrain {
     object-fit: contain;
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 5;
-    grid-row-end: 7;
-}
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .arabia {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .australia {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .japon {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 2/3; }
+  .china {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .miami {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 3/4; }
+  .imola {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 4/5; }
+  .monaco {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 4/5; }
+  .canada {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 5/6; }
+  .españa {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 5/6; }
+  .austria {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 6/7; }
+  .granBretaña {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 6/7; }
+  .hungria {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 7/8; }
+  .belgica {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 7/8; }
+  .holanda {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 8/9; }
+  .italia {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 8/9; }
+  .baku {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 9/10; }
+  .singapur {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 9/10; }
+  .eeuu {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 10/11; }
+  .mexico {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 10/11; }
+  .brasil {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 11/12; }
+  .lasVegas {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 11/12; }
+  .qatar {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 12/13; }
+  .abuDhabi {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 12/13; } }
 
-.ImagenR3{
+@media (max-width: 390px) {
+  .logoDelSitio {
+    background-color: black;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 10;
-}
-
-.TituloReg{
-    font-style: italic;
-    font-size: 36px;
-    border-bottom: 1px solid red;
-    border-right: 1px solid red;
-    border-radius: 15px 0px;
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-.texto1{
+    height: 50px;
+    padding: 10px; }
+  .logoDelSitio a img {
+    width: 77px;
+    height: 20px; }
+  .menu {
+    list-style: none;
+    background-color: red;
     width: 100%;
-    height: 100%;
-    font-style: italic;
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 7;
-    grid-row-end: 10;
-    object-fit: contain;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-radius: 0px 15px;
-}
-
-.texto1 p{
-    font-size: 15px;
-    padding-left: 5px;
-}
-
-.texto2{
-    width: 100%;
-    height: 100%;
-    font-style: italic;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 6;
-    object-fit: contain;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    border-radius: 15px 0px;
-}
-
-.texto2 p{
-    font-size: 18px;
-}
-
-/*Reglamento*/
-
-.PilotosClasificacion{
+    height: 35px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    border-collapse: collapse;
-    justify-items: center;
-}
-
-.PilotosClasificacion tr th{
+    align-items: center; }
+  .menu li a {
+    justify-content: space-evenly;
+    font-size: 10px;
+    text-decoration: none;
+    color: white; }
+  .paginaPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .imagenes img {
+    width: 350px;
+    height: 200px;
+    border-radius: 0px 30px 30px 0px; }
+  .noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-left: 1px solid red;
+    object-fit: contain; }
+  .noticias img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px; }
+  .pie1 {
+    display: flex;
+    background-color: #2c2c2c;
+    width: 100%;
+    height: 33px;
+    align-items: center; }
+  .pie1 img {
+    width: 25px;
+    height: 25px;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .f1Play img {
+    height: 30px;
+    width: 70px; }
+  .f1Play2 img {
+    height: 30px;
+    width: 70px; }
+  .PilotosClasificacion tr th {
     padding: 5px;
-    padding-top: 30px;
-    font-size: 36px;
+    padding-top: 15px;
+    font-size: 10px;
     font-style: italic;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-bottom: solid black;
-    justify-items: center;
-}
-
-.PilotosClasificacion tr td{
-    font-size: 32px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-items: center; }
+  .PilotosClasificacion tr td {
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-bottom: 0.5px solid black;
-    padding: 30px;
-}
-
-.EscuderiasClasificacion{
-    display: flex;
-    justify-content: space-evenly;
-    border-collapse: collapse;
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.EscuderiasClasificacion tr th{
-    font-size: 36px;
+    padding: 10px; }
+  .EscuderiasClasificacion tr th {
+    font-size: 10px;
     font-style: italic;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-bottom: solid black;
-    justify-items: center;
-}
-
-.EscuderiasClasificacion tr td{
-    font-size: 32px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-items: center; }
+  .EscuderiasClasificacion tr td {
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-bottom: 0.5px solid black;
-    padding: 15px;
-}
-
-/*Clasificacion*/
-
-.equipos h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    font-size: 20px;
-}
-
-.pilotos{
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-radius: 15px 0px;
-    width: 150px;
-    height: 180px;
-}
-
-.ferrari{
+    padding: 10px; }
+  .circuitos {
+    height: 40px;
+    width: 55px; }
+  .calendario_2024 {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    object-fit: contain;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.redBull{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
     object-fit: contain;
-    justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.mclaren{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    object-fit: contain;
-    justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.mercedes{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    object-fit: contain;
-    justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.astonMartin{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    object-fit: contain;
-    justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.vcrb{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    object-fit: contain;
-    justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.alpine{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    object-fit: contain;
-    justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.haas{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    object-fit: contain;
-    justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.williams{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    object-fit: contain;
-    justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.sauber{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    object-fit: contain;
-    justify-items: center;
-    border-top: 3px solid red;
-    border-right: 3px solid red;
-    border-radius: 0px 30px;
-}
-
-.pilotos1{
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-bottom: 40px; }
+  .linea_vertical1 {
     grid-column: 1/2;
-    grid-row: 2/3;
-    object-fit: contain;
-    justify-self: center;
-    align-self: center;
-}
-
-.pilotos2{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    object-fit: contain;
-    justify-self: center;
-    align-self: center;
-}
-
-.LogoE{
-    grid-column: 4/5;
-    grid-row: 1/2;
-    object-fit: contain;
-    justify-self: center;
-    align-self: center;
-}
-
-.AutosE{
-    grid-column: 3/5;
-    grid-row: 2/3;
-    object-fit: contain;
-    justify-self: center;
-    align-self: center;
-}
-
-.NombreE{
+    grid-row: 1/13;
+    height: 100%;
+    width: 3px;
+    justify-self: right;
+    background-color: red; }
+  .linea_vertical2 {
     grid-column: 1/2;
-    grid-row: 1/2;
-    justify-self: center;
-    align-self: center;
-}
-
-/*equipos*/
-
-.circuitos{
-    height: 150px;
-    width: 235px;
-}
-
-.calendario_2024{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(8,1fr);
-    justify-items: center;
-    object-fit: contain;
-}
-
-.bahrain{
+    grid-row: 1/13;
+    height: 100%;
+    width: 3px;
+    justify-self: right;
+    background-color: red; }
+  .bahrain {
     object-fit: contain;
     grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.arabia{
+    grid-row: 1/2; }
+  .arabia {
     object-fit: contain;
     grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.australia{
-    object-fit: contain;
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-
-.japon{
+    grid-row: 1/2; }
+  .australia {
     object-fit: contain;
     grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.china{
+    grid-row: 2/3; }
+  .japon {
     object-fit: contain;
     grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.miami{
-    object-fit: contain;
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.imola{
+    grid-row: 2/3; }
+  .china {
     object-fit: contain;
     grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.monaco{
+    grid-row: 3/4; }
+  .miami {
     object-fit: contain;
     grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.canada{
-    object-fit: contain;
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-
-.españa{
+    grid-row: 3/4; }
+  .imola {
     object-fit: contain;
     grid-column: 1/2;
-    grid-row: 4/5;
-}
-
-.austria{
+    grid-row: 4/5; }
+  .monaco {
     object-fit: contain;
     grid-column: 2/3;
-    grid-row: 4/5;
-}
-
-.granBretaña{
-    object-fit: contain;
-    grid-column: 3/4;
-    grid-row: 4/5;
-}
-
-.hungria{
+    grid-row: 4/5; }
+  .canada {
     object-fit: contain;
     grid-column: 1/2;
-    grid-row: 5/6;
-}
-
-.belgica{
+    grid-row: 5/6; }
+  .españa {
     object-fit: contain;
     grid-column: 2/3;
-    grid-row: 5/6;
-}
-
-.holanda{
-    object-fit: contain;
-    grid-column: 3/4;
-    grid-row: 5/6;
-}
-
-.italia{
+    grid-row: 5/6; }
+  .austria {
     object-fit: contain;
     grid-column: 1/2;
-    grid-row: 6/7;
-}
-
-.baku{
+    grid-row: 6/7; }
+  .granBretaña {
     object-fit: contain;
     grid-column: 2/3;
-    grid-row: 6/7;
-}
-
-.singapur{
-    object-fit: contain;
-    grid-column: 3/4;
-    grid-row: 6/7;
-}
-
-.eeuu{
+    grid-row: 6/7; }
+  .hungria {
     object-fit: contain;
     grid-column: 1/2;
-    grid-row: 7/8;
-}
-
-.mexico{
+    grid-row: 7/8; }
+  .belgica {
     object-fit: contain;
     grid-column: 2/3;
-    grid-row: 7/8;
-}
-
-.brasil{
-    object-fit: contain;
-    grid-column: 3/4;
-    grid-row: 7/8;
-}
-
-.lasVegas{
+    grid-row: 7/8; }
+  .holanda {
     object-fit: contain;
     grid-column: 1/2;
-    grid-row: 8/9;
-}
-
-.qatar{
+    grid-row: 8/9; }
+  .italia {
     object-fit: contain;
     grid-column: 2/3;
-    grid-row: 8/9;
-}
-
-.abuDhabi{
+    grid-row: 8/9; }
+  .baku {
     object-fit: contain;
-    grid-column: 3/4;
-    grid-row: 8/9;
-}
-
-/*Calendario*/
-
-@media(max-width:768px){
-    .logoDelSitio{
-        background-color: black;
-        width: 100%;
-        height: 100px;
-        padding: 30px;
-        flex-wrap: wrap; 
-    }
-    
-    .logoDelSitio a img{
-        width: 200px;
-        height: 50px;
-    }
-    
-    .menu{
-        list-style: none;
-        background-color: red;
-        width: 100%;
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .menu li a{
-        font-size: 15px;
-        text-decoration: none;
-        color: white;
-    }
-
-    .paginaPrincipal{
-        display:flex;
-        flex-direction:column;
-        align-items: center;
-    }
-
-    .pie1{
-        display: flex;
-        background-color:rgb(44, 44, 44);
-        width: 100%;
-        height: 50px;
-        align-items: center;
-    }
-    .pie1 img{
-        width: 30px;
-        height: 30px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .PilotosClasificacion tr th{
-        padding: 5px;
-        padding-top: 15px;
-        font-size: 16px;
-        font-style: italic;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-bottom: solid black;
-        justify-items: center;
-    }
-    
-    .PilotosClasificacion tr td{
-        font-size: 16px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-bottom: 0.5px solid black;
-        padding: 15px;
-    }
-
-    .EscuderiasClasificacion tr th{
-        font-size: 16px;
-        font-style: italic;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-bottom: solid black;
-        justify-items: center;
-    }
-    
-    .EscuderiasClasificacion tr td{
-        font-size: 16px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-bottom: 0.5px solid black;
-        padding: 15px;
-    }
-}
-
-@media(max-width:390px){
-    .logoDelSitio{
-        background-color: black;
-        width: 100%;
-        height: 50px;
-        padding: 10px;
-    }
-    
-    .logoDelSitio a img{
-        width: 77px;
-        height: 20px;
-    }
-    
-    .menu{
-        list-style: none;
-        background-color: red;
-        width: 100%;
-        height: 35px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .menu li a{
-        justify-content: space-evenly;
-        font-size: 10px;
-        text-decoration: none;
-        color: white;
-    }
-
-    .paginaPrincipal{
-        display:flex;
-        flex-direction:column;
-        align-items: center;
-    }
-
-    .imagenes img{
-        width: 350px;
-        height: 200px;
-        border-radius: 0px 30px 30px 0px;
-    }
-    
-    .noticias{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
-        border-left: 1px solid red;
-        object-fit: contain;
-    }
-    
-    .noticias img{
-        width: 200px;
-        height: 200px;
-        border-radius: 30px;
-    }
-
-    .pie1{
-        display: flex;
-        background-color:rgb(44, 44, 44);
-        width: 100%;
-        height: 33px;
-        align-items: center;
-    }
-    .pie1 img{
-        width: 25px;
-        height: 25px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .PilotosClasificacion tr th{
-        padding: 5px;
-        padding-top: 15px;
-        font-size: 10px;
-        font-style: italic;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-bottom: solid black;
-        justify-items: center;
-    }
-    
-    .PilotosClasificacion tr td{
-        font-size: 10px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-bottom: 0.5px solid black;
-        padding: 10px;
-    }
-
-    .EscuderiasClasificacion tr th{
-        font-size: 10px;
-        font-style: italic;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-bottom: solid black;
-        justify-items: center;
-    }
-    
-    .EscuderiasClasificacion tr td{
-        font-size: 10px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-bottom: 0.5px solid black;
-        padding: 10px;
-    }
-}
+    grid-column: 1/2;
+    grid-row: 9/10; }
+  .singapur {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 9/10; }
+  .eeuu {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 10/11; }
+  .mexico {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 10/11; }
+  .brasil {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 11/12; }
+  .lasVegas {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 11/12; }
+  .qatar {
+    object-fit: contain;
+    grid-column: 1/2;
+    grid-row: 12/13; }
+  .abuDhabi {
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 12/13; } }
