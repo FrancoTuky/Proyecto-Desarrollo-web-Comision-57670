@@ -47,10 +47,8 @@
     font-style: italic;
     font-size: map-get($tam-fuente, tam1);
     border-bottom: 1px solid $colorPrincipal;
-    border-right: 1px solid $colorPrincipal;
-    border-radius: 15px 0px;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 10;
 }
 
 .texto1{
@@ -62,13 +60,11 @@
     grid-row-start: 7;
     grid-row-end: 10;
     object-fit: contain;
-    border-bottom: 2px solid $colorSecundario;
-    border-left: 2px solid $colorSecundario;
     border-radius: 0px 15px;
 }
 
 .texto1 p{
-    font-size: 15px;
+    font-size: map-get($tam-fuente, tam3);
     padding-left: 5px;
 }
 
@@ -81,11 +77,9 @@
     grid-row-start: 2;
     grid-row-end: 6;
     object-fit: contain;
-    border-bottom: 2px solid $colorSecundario;
-    border-right: 2px solid $colorSecundario;
     border-radius: 15px 0px;
 }
 
 .texto2 p{
-    font-size: map-get($tam-fuente, tam4);
+    font-size: map-get($tam-fuente, tam3);
 }

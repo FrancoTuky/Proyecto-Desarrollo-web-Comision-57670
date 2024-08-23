@@ -1,7 +1,8 @@
 .equipos h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
-    font-size: map-get($tam-fuente, tam3);
+    font-size: map-get($tam-fuente, tam1);
+    text-align: center;
 }
 
 .pilotos{
@@ -21,6 +22,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+            border-bottom: 3px solid red;
+        }
 }
 
 .redBull{
@@ -32,6 +36,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+           border-bottom: 3px solid darkblue;
+        }
 }
 
 .mclaren{
@@ -43,6 +50,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+            border-bottom: 3px solid orangered;
+        }
 }
 
 .mercedes{
@@ -54,6 +64,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+           border-bottom: 3px solid lightseagreen;
+        }
 }
 
 .astonMartin{
@@ -65,6 +78,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+            border-bottom: 3px solid green;
+        }
 }
 
 .vcrb{
@@ -76,6 +92,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+           border-bottom: 3px solid lightblue;
+        }
 }
 
 .alpine{
@@ -87,6 +106,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+          border-bottom: 3px solid blue;
+        }
 }
 
 .haas{
@@ -98,6 +120,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+          border-bottom: 3px solid gray;
+        }
 }
 
 .williams{
@@ -109,6 +134,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+           border-bottom: 3px solid darkcyan;
+        }
 }
 
 .sauber{
@@ -120,6 +148,9 @@
     border-top: 3px solid $colorPrincipal;
     border-right: 3px solid $colorPrincipal;
     border-radius: 0px 30px;
+        h2{
+          border-bottom: 3px solid greenyellow;
+        }
 }
 
 .pilotos1{
@@ -159,4 +190,8 @@
     grid-row: 1/2;
     justify-self: center;
     align-self: center;
+}
+
+.NombreFP{
+    font-size: map-get($tam-fuente, tam3);
 }

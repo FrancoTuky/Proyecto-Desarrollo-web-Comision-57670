@@ -289,4 +289,40 @@
         grid-column: 2/3;
         grid-row: 12/13;
     }
+
+    .equipos h2{
+        font-size: map-get($tam-fuente, tam5);
+        text-align: center;
+    }
+
+    .pilotos{
+        width: 34px;
+        height: 41px;
+    }
+
+    .AutosE{
+        width: 110px;
+        height: 30px;
+    }
+
+    .LogoE{
+        width: 15px;
+        height: 15px;
+    }
+
+    .NombreFP{
+        font-size: map-get($tam-fuente, tam6);
+    }
+
+    .texto1 p{
+        font-size: map-get($tam-fuente, tam6);
+    }
+
+    .texto2 p{
+        font-size: map-get($tam-fuente, tam5);
+    }
+
+    .TituloReg{
+        font-size: map-get($tam-fuente, tam3);
+    }
 }
