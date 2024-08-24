@@ -26,7 +26,8 @@
 .paginaPrincipal {
   display: flex;
   flex-direction: row;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  background-color: white; }
 
 .imagenes img {
   width: 700px;
